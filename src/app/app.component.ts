@@ -12,7 +12,15 @@ export class AppComponent {
   constructor() {}
   checkPalindrome(){
     this.isFormSubmitted=true
-    this.isPalindrome=true
+    let palindromeArray: any= this.palindromeText.split("")
+    palindromeArray=palindromeArray.reverse()
+    palindromeArray=palindromeArray.join("")
+    if(palindromeArray===this.palindromeText){
+      this.isPalindrome=true
+    }else{
+      this.isPalindrome=false
+    }
+
   }
 
 }
