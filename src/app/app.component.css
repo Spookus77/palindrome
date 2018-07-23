@@ -1,5 +1,5 @@
 .content{
-    padding: 40px 15px;
+    padding: 15px 15px;
     text-align: center;
 }
 .palindrome-input {
@@ -9,4 +9,18 @@
 .btn-edge{
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+}
+.container{
+    background: #faf7ff;
+    position: relative;
+    top: 200px;
+    border: 2px #757279 solid;
+    border-radius: 25px;
+    width: 600px;
+}
+.statusContainer{
+    margin-top: 12px;
+}
+.statusContainer span {
+    font-size: 20px;
 }

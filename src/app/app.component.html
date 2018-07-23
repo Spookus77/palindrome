@@ -4,7 +4,7 @@
 <p>Type a word in the text box and submit to find out if it's a palindrome.</p>
 <input (keyup.enter)="checkPalindrome()" class="palindrome-input" type="text" placeholder="Type text here" [(ngModel)]="palindromeText">
 <button (click)="checkPalindrome()" class="btn btn-primary btn-edge">Submit</button>
-<div>
+<div class="statusContainer">
     <span *ngIf="isPalindrome && isFormSubmitted" class="label label-success">Palindrome</span>
     <span *ngIf="!isPalindrome && isFormSubmitted" class="label label-danger">Not a palindrome</span>
 </div>
